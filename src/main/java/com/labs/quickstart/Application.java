@@ -1,6 +1,7 @@
 package com.labs.quickstart;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Configuration
 @RestController
 @EnableAutoConfiguration
+@SpringBootApplication
 public class Application
 {
 

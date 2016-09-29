@@ -103,6 +103,8 @@ dependencies {
     // metrics collection
     //compile("org.springframework.cloud:spring-cloud-starter-spectator")
 
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("org.assertj:assertj-core:3.5.2")
     testCompile("org.spockframework:spock-core:$spockVersion") {
         exclude group: 'org.codehaus.groovy'
     }
