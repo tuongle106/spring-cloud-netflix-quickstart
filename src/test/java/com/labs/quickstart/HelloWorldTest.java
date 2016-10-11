@@ -14,14 +14,12 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class HelloWorldTest
-{
+public class HelloWorldTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
     @Test
-    public void testHelloWorld()
-    {
+    public void testHelloWorld() {
         final String body = restTemplate.getForObject("/", String.class);
         assertThat(body).isEqualTo("Hello world !!!");
     }

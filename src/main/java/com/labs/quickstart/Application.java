@@ -15,17 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableAutoConfiguration
 @SpringBootApplication
-public class Application
-{
+@SuppressWarnings("PMD")
+public class Application {
 
-	@RequestMapping("/")
-	public String hello()
-	{
-		return "Hello world !!!";
-	}
+    @RequestMapping("/")
+    public String hello() {
+        return "Hello world !!!";
+    }
 
-	public static void main(String[] args)
-	{
-		new SpringApplicationBuilder(Application.class).web(true).run(args);
-	}
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(Application.class).web(true).run(args);
+    }
 }
+
