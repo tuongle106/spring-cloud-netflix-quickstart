@@ -14,6 +14,7 @@ buildscript {
         classpath("io.spring.gradle:dependency-management-plugin:${dependencyManagementVersion}")
         classpath("se.transmode.gradle:gradle-docker:1.2")
         classpath("net.ltgt.gradle:gradle-errorprone-plugin:0.0.8")
+        //classpath("net.ltgt.gradle:gradle-apt-plugin:0.9")
     }
 }
 
@@ -39,6 +40,7 @@ apply plugin: 'net.ltgt.errorprone'
 apply plugin: 'checkstyle'
 apply plugin: 'pmd'
 apply plugin: 'jacoco'
+//apply plugin: "net.ltgt.apt" // turn errorprone off when enable this plugin
 
 
 group = 'com.padma'
