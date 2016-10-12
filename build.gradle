@@ -38,6 +38,7 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'net.ltgt.errorprone'
 apply plugin: 'checkstyle'
 apply plugin: 'pmd'
+apply plugin: 'jacoco'
 
 
 group = 'com.padma'
@@ -73,7 +74,7 @@ compileJava.options*.compilerArgs = [
         "-Xlint:dep-ann", "-Xlint:divzero", "-Xlint:empty", "-Xlint:finally",
         "-Xlint:overrides", "-Xlint:path", "-Xlint:processing", "-Xlint:static",
         "-Xlint:try", "-Xlint:fallthrough", "-Xlint:rawtypes", "-Xlint:deprecation",
-        "-Xlint:unchecked", "-Xlint:-options", "-Werror"
+        "-Xlint:unchecked", "-Xlint:-options"
 ]
 
 compileTestJava.options*.compilerArgs = [
