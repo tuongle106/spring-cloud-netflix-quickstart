@@ -48,10 +48,7 @@ version = '1.0'
 
 dependencyManagement {
     imports {
-        mavenBom "org.springframework.cloud:spring-cloud-netflix:${springCloudNeflixVersion}"
-
-        // in case we want to use spring core libraries such as spring-core in project
-        mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootDependencyVersion}"
+        mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Brixton.SR6'
     }
 }
 
@@ -61,7 +58,7 @@ checkstyle {
 }
 
 pmd {
-    ruleSetFiles = files(rootProject.file('codequality/pmd/ruleset.xml'))
+    ruleSetFiles = files(file('codequality/pmd/ruleset.xml'))
 }
 
 
