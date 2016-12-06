@@ -46,7 +46,7 @@ apply plugin: 'net.ltgt.apt'
 
 
 group = 'com.padma'
-version = '1.0'
+version = '1.0-SNAPSHOT'
 
 sonarqube {
     properties {
